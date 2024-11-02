@@ -26,7 +26,7 @@ class QuizInterface:
         self.canvas.place(x=10, y=75)
 
         self.question_number = 0
-        self.question = self.canvas.create_text(140, 50, text=f'{self.add_line_breaks(self.current_question())}', font=('Arial', 8))
+        self.question = self.canvas.create_text(140, 50, text=f'{self.add_line_breaks(self.current_question())}', font=('Arial', 8), fill='black')
 
         self.true_image = PhotoImage(file='./images/true.png')
         self.true_button = Button(image=self.true_image, highlightthickness=0, command=self.right_button)
