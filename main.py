@@ -3,7 +3,7 @@ from ui import QuizInterface
 response = requests.get(url='https://opentdb.com/api.php?amount=10&category=31&type=boolean')
 response.raise_for_status()
 question_data = response.json()['results']
-print(response.json())
+
 
 from question_model import Question
 from quiz_brain import QuizBrain
